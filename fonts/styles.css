@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "TTNorms";
+  src: url(./TTNorms-Regular.woff) format("woff"),
+    url(./TTNorms-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TTNorms";
+  src: url(./TTNorms-Bold.woff) format("woff"),
+    url(./TTNorms-Bold.woff2) format("woff2");
+}
