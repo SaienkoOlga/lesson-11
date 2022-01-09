@@ -12,6 +12,7 @@ body {
 }
 /* HEADER */
 .header {
+  padding-top: 50px;
   width: 1440px;
   height: 1040px;
   background-image: linear-gradient(
@@ -30,34 +31,22 @@ body {
     height: 10px
     box-shadow: 0px 10px 0 #cacadb; 0px 20px #E7E7F2;
   } */
-.logo_subsection {
-  display: flex;
-  align-items: flex-end;
-}
-.logo_min {
-  margin-top: 50px;
-}
-.slash {
-  margin-top: 50px;
-}
-.logo2 {
-  font-size: 38px;
-  line-height: 45px;
-  color: #fff;
-}
 .header_contacts {
   display: flex;
+}
+.logo_subsection {
+  width: 413px;
+  padding-right: 343px;
+}
+.h_contacts {
+  width: 200px;
+  display: flex;
   flex-direction: row;
-}
-.contacts {
-  color: #b3b3ba;
-  font-size: 16px;
-  line-height: 19px;
-}
-.tel {
-  font-weight: 700;
-}
+  
+ }
 .lang {
+  width: 76px;
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -66,8 +55,20 @@ body {
   line-height: 14px;
   font-weight: 700;
 }
+.contacts {
+  display: flex;
+  flex-direction: row;
+    color: #b3b3ba;
+  font-size: 16px;
+  line-height: 19px;
+}
+.tel {
+  font-weight: 700;
+}
 .nav {
-  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+     padding-left: 0px;
   list-style: none;
 }
 .nav-item {
@@ -190,4 +191,72 @@ body {
 /* FOOTER */
 .footer {
   height: 151px;
+  background-color: #F5F5FA;
+}
+.footer_container {
+  display: flex;
+}
+
+.footer_contacts {
+  margin: 0px;
+  padding-left: 0px;
+  padding-top: 32px;
+  display: flex;
+  width: 400px;
+  height: 79px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_contacts li {
+  color: #B3B3BA;
+}
+.odesa {
+  list-style: none;
+}
+.address {
+  padding-right: 31px;
+  color: #323264;
+  font-size: 16px;
+  line-height: 19px;
+  }
+.map {
+  text-transform: uppercase;
+  color: #24A3FF;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.map::before {
+  list-style: disc;
+  color: #B3B3BA;
+}
+.fasebook {
+  list-style: none;
+}
+.tel {
+  padding-right: 10PX;
+  color: #46466E;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.mail {
+  color: #24A3FF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+}
+.copy {
+  padding-top: 20px;
+  display: flex;
+  justify-content: end;
+  align-content: flex-start;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B3B3BA;
 }
