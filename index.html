@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/fonts.css">
+    <title>Hlegals</title>
     <link rel="stylesheet" href="styles/style.css">
-
 </head>
 
 <body>
@@ -17,10 +15,13 @@
             <!-- HEADER -->
             <header class="header">
                 <div class="logo-container">
-                    <img class="logo" src="images/Logo.svg" alt="Hlegals logotype">
-                    <img class="logo-slash" src="images/logo-slash.svg" alt="Hlegals logotype slash">
+                    <a href="#">
+                        <img class="logo" src="images/Logo.svg" alt="Hlegals logotype" />
+                    </a>
+                    <img class="logo-slash" src="images/logo-slash.svg" alt="Hlegals logotype slash" />
                     <a href="#" class="logo-text">послуги</a>
-                    <img class="logo-symbol" src="images/logo-symbol.svg" alt="Hlegals logotype symbol">
+                    <img class="logo-symbol" src="images/logo-symbol.svg" alt="Hlegals logotype symbol" />
+                    <label for="nav-trigger" class="nav-open fas fa-bars"></label>
                 </div>
                 <div class="header-actions">
                     <div class="header-contacts">
@@ -36,11 +37,16 @@
                             </li>
                         </ul>
                         <a href="https://www.google.com/maps/place/%D0%90%D0%B4%D0%BC%D0%B8%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF.,+3,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/@46.436045,30.7379414,17z/data=!4m13!1m7!3m6!1s0x40c63396894457b7:0x7f6c5236cbcb70c8!2z0JDQtNC80LjRgNCw0LvRjNGB0LrQuNC5INC_0YDQvtGB0L8uLCAzLCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!3b1!8m2!3d46.436045!4d30.7401301!3m4!1s0x40c63396894457b7:0x7f6c5236cbcb70c8!8m2!3d46.436045!4d30.7401301?hl=ru"
-                            target="_blank" class="header-address">Одеса, Адміральський пр., 3</a>
+                            target="_blank" class="address">Одеса, Адміральський пр., 3</a>
                         <a class="phone-number" href="tel:+380503901591">+38 (050) 390 15 91</a>
-                        <a class="social-link" href="#"><img src="images/Facebook2.png" alt="fasebook"></a>
+                        <a class="social-link fab fa-facebook" href="#"></a>
                     </div>
+
+                    <!-- Used to open/close mobile navigation -->
+                    <input id="nav-trigger" type="checkbox">
+
                     <nav class="header-nav">
+                        <label for="nav-trigger" class="nav-close fas fa-times"></label>
                         <a class="nav-link" href="#">про нас</a>
                         <a class="nav-link nav-link-active" href="#">послуги</a>
                         <a class="nav-link" href="#">команда</a>
@@ -125,111 +131,123 @@
         </div>
     </section>
 
+    <!-- Cases -->
     <section class="cases">
         <div class="container">
-            <ul class="cases-list">
-                <li class="cases-item case-hillel">
-                    <h2 class="case-card cases-title">успішні кейси</h2>
-                    <a href="#" class="case-card">
-                        <h3 class="case-name">Супровід проекту з купівлі-продажу сільськогосподарської продукції</h3>
-                        <span class="case-company">Hillel IT School</span>
-                    </a>
+            <div class="cases-list">
+                <div class="cases-item-wrapper">
+                    <h2 class="cases-item cases-title section-title">Успішні кейси</h2>
+                    <div class="cases-item cases-item--hillel">
+                        <h3 class="cases-item-title">
+                            <a href="" class="cases-item-link">Супровід проекту з купівлі-продажу сільськогосподарської
+                                продукції</a>
+                        </h3>
+                        <span class="cases-item-company">Hillel IT School</span>
+                    </div>
+                </div>
+                <div class="cases-item cases-item-wannabiz">
+                    <h3 class="cases-item-title">
+                        <a href="" class="cases-item-link">Підготовка комплексного юридичного висновку для європейського
+                            банку</a>
+                    </h3>
+                    <span class="cases-item-company">WannaBiz</span>
+                </div>
+                <div class="cases-item cases-item-tapgerine">
+                    <h3 class="cases-item-title">
+                        <a href="" class="cases-item-link">Супровід проекту з купівлі-продажу сільськогосподарської
+                            продукції</a>
+                    </h3>
+                    <span class="cases-item-company">tapgerin</span>
+                </div>
+                <div class="cases-item cases-item-3dlook">
+                    <h3 class="cases-item-title">
+                        <a href="" class="cases-item-link">Представництво інтересів великого зернотрейдера в податковому
+                            спорі</a>
+                    </h3>
+                    <span class="cases-item-company">3D LOOK</span>
+                </div>
+                <div class="cases-item cases-item-adtelligent">
+                    <h3 class="cases-item-title">
+                        <a href="" class="cases-item-link">Оскарження податкових повідомлень-рішень ДФС</a>
+                    </h3>
+                    <span class="cases-item-company">adtelligent</span>
+                </div>
+                <div class="cases-item cases-item-clikky">
+                    <h3 class="cases-item-title">
+                        <a href="" class="cases-item-link">Супровід проекту з кредитування агротрейдерів мальтійським
+                            банком</a>
+                    </h3>
+                    <span class="cases-item-company">Clikky</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="clients">
+        <div class="container container--xl">
+            <h2 class="clients-title section-title">Вже довіряють нам</h2>
+            <ul class="clients-list">
+                <li class="clients-item clients-item--hillel">
+                    <img class="client-logo" src="images/Item.png" alt="hillel">
                 </li>
-                <li class="cases-item case-wannabiz">
-                    <a href="#" class="case-card">
-                        <h3 class="case-name">Підготовка комплексного юридичного висновку для європейського банку</h3>
-                        <span class="case-company">WannaBiz</span>
-                    </a>
+                <li class="clients-item clients-item--wannabiz">
+                    <img class="client-logo" src="images/Item3.png" alt="wannabiz">
                 </li>
-                <li class="cases-item case-tapgerine">
-                    <a href="#" class="case-card">
-                        <h3 class="case-name">Супровід проекту з купівлі-продажу сільськогосподарської продукції</h3>
-                        <span class="case-company">tapgerine</span>
-                    </a>
+                <li class="clients-item clients-item--tapgerine">
+                    <img class="client-logo" src="images/Item2.png" alt="tapgerin">
                 </li>
-                <li class="cases-item case-3dlook">
-                    <a href="#" class="case-card">
-                        <h3 class="case-name">Представництво інтересів великого зернотрейдера в податковому спорі</h3>
-                        <span class="case-company">3D LOOK</span>
-                    </a>
+                <li class="clients-item clients-item--3dlook">
+                    <img class="client-logo" src="images/Item10.png" alt="3dlook">
                 </li>
-                <li class="cases-item case-adtelligent">
-                    <a href="#" class="case-card">
-                        <h3 class="case-name">Оскарження податкових повідомлень-рішень ДФС</h3>
-                        <span class="case-company">adtelligent</span>
-                    </a>
+                <li class="clients-item clients-item--orangear">
+                    <img class="client-logo" src="images/Item4.png" alt="orangear">
                 </li>
-                <li class="cases-item case-clikky">
-                    <a href="#" class="case-card">
-                        <h3 class="case-name">Супровід проекту з кредитування агротрейдерів мальтійським банком</h3>
-                        <span class="case-company">Clikky</span>
-                    </a>
+                <li class="clients-item clients-item--adtelligent">
+                    <img class="client-logo" src="images/Item5.png" alt="adteligent">
+                </li>
+                <li class="clients-item clients-item--clikky">
+                    <img class="client-logo" src="images/Item6.png" alt="clickky">
+                </li>
+                <li class="clients-item clients-item--ecoleasing">
+                    <img class="client-logo" src="images/Item11.png" alt="eco_leasing">
+                </li>
+                <li class="clients-item clients-item--ingratek">
+                    <img class="client-logo" src="images/Item7.png" alt="infra_tek">
+                </li>
+                <li class="clients-item clients-item--citypark">
+                    <img class="client-logo" src="images/Item8.png" alt="сити_парк">
+                </li>
+                <li class="clients-item clients-item--artprint">
+                    <img class="client-logo" src="images/Item9.png" alt="art_studio">
+                </li>
+                <li class="clients-item clients-item--ultimatecard">
+                    <img class="client-logo" src="images/Item12.png" alt="ultimate_card">
                 </li>
             </ul>
         </div>
     </section>
-    <section class="clients-grid">
-        <h3 class="clients-title">вже довіряють нам</h3>
-        <ul class="clients-list">
-            <li class="client">
-                <img src="images/Item.png" alt="hillel">
-            </li>
-            <li class="client">
-                <img src="images/Item3.png" alt="wannabiz">
-            </li>
-            <li class="client">
-                <img src="images/Item2.png" alt="tapgerin">
-            </li>
-            <li class="client">
-                <img src="images/Item10.png" alt="3dlook">
-            </li>
-            <li class="client">
-                <img src="images/Item4.png" alt="orangear">
-            </li>
-            <li class="client">
-                <img src="images/Item5.png" alt="adteligent">
-            </li>
-            <li class="client">
-                <img src="images/Item6.png" alt="clickky">
-            </li>
-            <li class="client">
-                <img src="images/Item11.png" alt="eco_leasing">
-            </li>
-            <li class="client">
-                <img src="images/Item7.png" alt="infra_tek">
-            </li>
-            <li class="client">
-                <img src="images/Item8.png" alt="сити_парк">
-            </li>
-            <li class="client">
-                <img src="images/Item9.png" alt="art_studio">
-            </li>
-            <li class="client">
-                <img src="images/Item12.png" alt="ultimate_card">
-            </li>
-        </ul>
-    </section>
 </body>
 <footer class="footer">
     <div class="container footer-container">
-        <ul class="footer-contacts">
-            <li class="odesa">
+        <div class="footer-contacts">
+            <div class="odesa">
                 <span class="footer-address">Одеса, Адміральський пр., 3</span>
-            </li>
-            <li>
+            </div>
+            <div>
                 <a class="map" href="#">Подивитися на мапі</a>
-            </li>
+            </div>
             <br>
-            <li class="fasebook">
+            <div class="fasebook">
                 <a href="#"><img src="images/Facebook.png" alt="fasebook"></a>
-            </li>
-            <li>
+            </div>
+            <div>
                 <a class="tel" href="#">+38 (050) 390 15 91</a>
-            </li>
-            <li>
+            </div>
+            <div>
                 <a class="mail" href="mailto: contact@hlegals.net">contact@hlegals.net</a>
-            </li>
-        </ul>
+            </div>
+        </div>
         <div class="copy">
             <p>© 2021 ТОВ Юридична компанія «HLEGALS»</p>
         </div>
