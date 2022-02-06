@@ -106,8 +106,7 @@
 }
 
 .address,
-.phone-number,
-.social-link {
+.phone-number {
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -118,6 +117,15 @@
 
 .phone-number {
   font-weight: bold;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  line-height: 19px;
+  color: #b3b3ba;
+  text-decoration: none;
 }
 
 .address::after,
@@ -155,7 +163,7 @@
 }
 
 #nav-trigger {
-  display: none; 
+  display: none;
 }
 
 .header-nav .nav-close {
@@ -168,7 +176,7 @@
   background-color: transparent;
   color: #ec6f5d;
   font-size: 32px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .header-nav .nav-link {
@@ -199,7 +207,7 @@
 }
 
 .services-cards {
-  margin: 68px 0 0;
+  margin-top: clamp(20px, calc(68 / 1360 * 100vw), 68px);
   padding-left: 0;
   list-style: none;
   display: flex;
@@ -285,21 +293,22 @@
 }
 
 .cases-item--3dlook {
-  flex-basis: calc(320px - var (--base-gap));
+  flex-basis: calc(320px - var(--base-gap));
 }
 
 .cases-item--adtelligent {
-  flex-basis: calc(453px - var (--base-gap));
+  flex-basis: calc(453px - var(--base-gap));
 }
 
 .cases-item--clikky {
-  flex-basis: calc(547px - var (--base-gap));
+  flex-basis: calc(547px - var(--base-gap));
 }
 
 .cases-item-title {
   margin: 0;
-  font-size: 24px;
+  font-size: clamp(18px, calc(24 / 1360 * 100vw), 24px);
   line-height: 28px;
+  font-weight: 500;
 }
 
 .cases-item-link {
@@ -399,39 +408,30 @@
 /* FOOTER */
 
 .footer {
-  height: 151px;
   background-color: #f5f5fa;
 }
 .footer-container {
   display: flex;
+  justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 40px;
 }
 
 .footer-contacts {
-  width: 492px;
-  height: 79px;
-  margin: 0px;
-  padding-left: 0;
+  position: relative;
   display: flex;
   flex-flow: row wrap;
+  flex-basis: 35%;
   gap: 20px 30px;
 }
-.footer-contacts li {
-  color: #b3b3ba;
-}
-.odesa {
-  list-style: none;
-  margin-right: 31px;
-  margin-bottom: 10px;
-}
+
 .footer-address {
   color: #323264;
   font-size: 16px;
   line-height: 19px;
 }
-.map {
-  padding-right: 30px;
+
+.footer-map {
   text-transform: uppercase;
   color: #24a3ff;
   font-size: 12px;
@@ -439,30 +439,67 @@
   font-weight: 700;
   text-decoration: none;
 }
-.map::before {
-  list-style: disc;
-  color: #b3b3ba;
+
+.footer-social-link {
+  text-decoration: none;
+  color: #24a3ff;
+  font-size: 38px;
 }
-.fasebook {
-  list-style: none;
-  margin-top: -10px;
-}
-.tel {
+
+.footer-phone-number {
   color: #46466e;
   font-size: 16px;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
 }
-.mail {
+
+.footer-mail {
   color: #24a3ff;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
 }
+
+.footer-phone-number::before {
+  display: block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  left: 57px;
+  top: 44px;
+  border-radius: 50%;
+  background-color: #b3b3ba;
+  position: absolute;
+}
+
+.footer-map::before {
+  display: block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  left: 228px;
+  top: 6px;
+  border-radius: 50%;
+  background-color: #b3b3ba;
+  position: absolute;
+}
+
+/* .footer-map::after,
+.footer-phone-number::after,
+.footer-social-link::after {
+  content: "";
+  order: -1;
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #b3b3ba;
+} */
+
 .copy {
-  margin-top: -17px;
   display: flex;
   justify-content: end;
   flex-grow: 1;
