@@ -55,8 +55,7 @@
 }
 
 .logo-text {
-  font-size: 38px;
-  line-height: 45px;
+  font-size: clamp(19px, calc(38 / 1360 * 100vw), 38px);
   color: #fff;
   text-decoration: none;
 }
@@ -74,7 +73,7 @@
   align-self: center;
   background-color: transparent;
   color: #fff;
-  font-size: 32px;
+  font-size: 24px;
   cursor: pointer;
 }
 
@@ -421,7 +420,7 @@
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  flex-basis: 35%;
+  flex-basis: 400px;
   gap: 20px 30px;
 }
 
@@ -467,7 +466,7 @@
   content: "";
   width: 6px;
   height: 6px;
-  left: 57px;
+  left: 55px;
   top: 44px;
   border-radius: 50%;
   background-color: #b3b3ba;
@@ -486,18 +485,17 @@
   position: absolute;
 }
 
-/* .footer-map::after,
-.footer-phone-number::after,
-.footer-social-link::after {
-  content: "";
-  order: -1;
+.footer-mail::before {
   display: block;
+  content: "";
   width: 6px;
   height: 6px;
-  margin: 0 10px;
+  left: 228px;
+  top: 44px;
   border-radius: 50%;
   background-color: #b3b3ba;
-} */
+  position: absolute;
+}
 
 .copy {
   display: flex;
@@ -506,4 +504,8 @@
   font-size: 16px;
   line-height: 19px;
   color: #b3b3ba;
+}
+
+.copy-text {
+  margin: 0px;
 }

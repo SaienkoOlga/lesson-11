@@ -13,6 +13,29 @@
     display: block;
   }
 
+  .logo {
+    width: 77.5px;
+    height: 31px;
+  }
+
+  .logo-slash {
+    width: 11px;
+    height: 24px;
+  }
+
+  .logo-symbol {
+    width: 21px;
+    height: 24px;
+  }
+
+  .logo-text {
+    align-self: ;
+  }
+
+  .phone-number {
+    color: white;
+  }
+
   .header-contacts {
     justify-content: space-between;
   }
@@ -59,8 +82,17 @@
     text-align: center;
     font-size: 24px;
     line-height: 28px;
+    font-weight: 500;
   }
 
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .nav-link:active {
+    text-decoration: none;
+    color: #f0145a;
+  }
   /* Clients */
 
   .clients-item {
@@ -71,12 +103,23 @@
 
   .footer-container {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     align-content: center;
     gap: 20px;
   }
 
+  .footer-contacts {
+    flex-basis: 100%;
+  }
+
   .footer-address {
     font-weight: 600;
+  }
+
+  .footer-map::before,
+  .footer-phone-number::before,
+  .footer-mail::before {
+    display: none;
   }
 }
