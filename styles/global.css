@@ -1,6 +1,7 @@
 :root {
   --base-gap: 2px;
   --color-hover: #c1446b;
+  --fontColorGrey: #b3b3ba;
 }
 
 * {
@@ -9,14 +10,15 @@
 
 body {
   margin: 0;
-  font-family: "TT Norms", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "TT Norms", sans-serif; */
   background-color: #fff;
 }
 
 .container {
-  max-width: 1360px;
+  max-width: 1720px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 
 .container--xl {

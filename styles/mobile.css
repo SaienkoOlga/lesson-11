@@ -110,7 +110,13 @@
   }
 
   .footer-contacts {
+    flex-direction: column;
+    align-items: center;
     flex-basis: 100%;
+  }
+
+  .copy {
+    justify-content: center;
   }
 
   .footer-address {
